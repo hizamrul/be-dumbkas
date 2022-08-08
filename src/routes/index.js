@@ -6,7 +6,7 @@ const {auth} = require("../middleware/auth")
 // Components
 const {register, login} = require("../controller/auth")
 const { getUserInfo } = require("../controller/user")
-const { addTransaction, viewTransaction } = require("../controller/transaction")
+const { addTransaction, viewTransaction, summaryTransactions } = require("../controller/transaction")
 const { addCategory, viewCategory } = require("../controller/category")
 
 // Routing
@@ -25,6 +25,10 @@ router.get("/view-transaction", auth, viewTransaction)
 // Category
 router.get("/view-category", viewCategory)
 router.post("/add-category", addCategory)
+
+// Summary
+router.get("/summary", auth, summaryTransactions)
+
 
 
 

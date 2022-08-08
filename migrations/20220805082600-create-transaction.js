@@ -11,9 +11,7 @@ module.exports = {
       id_user: {
         type: Sequelize.STRING
       },
-      type: {
-        type: Sequelize.STRING
-      },
+      
       nominal: {
         type: Sequelize.STRING
       },

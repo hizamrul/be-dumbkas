@@ -19,7 +19,8 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true
     },
-    category_name: DataTypes.STRING
+    category_name: DataTypes.STRING,
+    category_type: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'category',
